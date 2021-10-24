@@ -196,12 +196,26 @@ grid-box h1{
 } 
 
 /*Plans*/
+.plans {
+    margin-top: 100px;
+}
+.plans .plan-text{
+    font-size: 40px;
+    padding-left: 5rem;
+    padding-right: 50%;
+}
+.plans p{
+    padding-left: 5rem;
+    padding-right: 50%;
+}
 .mockup-img{
     flex-basis: 50%;
 }
 .mockup-img img{
     max-width: 100%;
-    margin: auot 20px;
+    margin:  20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.698);
+    border-radius: 10px;
 }    
 .bronze{
     background: var(--gradient-1);
@@ -211,4 +225,124 @@ grid-box h1{
 }
 .gold{
     background:var(--gradient-3);
+}
+.plans .grid-box h2{
+    font-size: 40px;
+}
+.plans .grid-box h2{
+    color: whitesmoke;
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.plans .grid-box{
+    transition: transform 0.5s ease-in-out;
+
+}
+.plans .grid-box:hover{
+    transform: translateY(-30px);
+}
+
+/* projects */
+
+.projects {
+    margin-top: 80px;
+    text-align: center;
+}
+.projects h1{
+    font-size: 40px;
+}
+.projects-images{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+}
+.prj-img{
+    height: 400px;
+    overflow: hidden;
+}
+.prj-img img{
+    max-height: 100%;
+    min-width: 100%;
+}
+/*call to action*/
+
+.getstarted{
+    margin-top: 10px;
+    padding: 5rem;
+}
+.ctn-container{
+    display: flex;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+    padding: 2rem;
+    margin: 10px auto;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.ctn-btn{
+    margin-top: 15px;
+    padding: 20px 40px;
+    color: white;
+    background: var(--gradient-2);
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.596);
+    cursor: pointer;
+    outline: none;
+}
+.ctn-btn:hover{
+    background: var(--gradient-4);
+}
+
+/*footer*/
+
+.footer{
+    margin-top: 40px;
+    background-image: url(images/footer-agency.png);
+    background-size: cover;
+}
+.col-4{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer1 h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.footer1 i{
+    margin: 50px 20px;
+    font-size: 20px;
+    color: grey;
+}
+.footer2 h4, .footer3 h4, .footer4 h4{
+    font-weight: 400;
+}
+.footer hr{
+    width: 90%;
+    margin: 0 auto;
+}
+.copyright{
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    padding: 30px;
+    font-weight: 400;
+}
+#scrolltp{
+    color: white;
+    background: tomato;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5;
 }

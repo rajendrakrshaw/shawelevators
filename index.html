@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+
     <title>ShawElevators | Elevate You!</title>
 </head>
 <body>
@@ -31,7 +34,7 @@
     </header>
 
     <!--Services-->
-    <section class="services">
+    <section class="services" data-aos="fade-right">
         <div class="container">
             <div class="grid-wrapper">
                 <div class="grid-box newinstallation">
@@ -57,8 +60,8 @@
     </section>
 
     <!--Plans-->
-    <section class="plans">
-        <h1>We have three plans</h1>
+    <section class="plans" data-aos="fade-left">
+        <h1 class="plan-text">We have three plans</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facilis, natus veritatis nemo quas ducimus deleniti! Atque, ea. Laboriosam, earum. Qui expedita nostrum distinctio exercitationem vel non temporibus illum hic.</p>
         <div class="container">
             <div class="grid-wrapper">
@@ -71,11 +74,105 @@
                 <div class="grid-box gold">
                     <h1>Gold</h1>
                 </div>
+                <div class="mockup-img">
+                    <img src="images/team-mockup.png" alt="">
+                </div>
             </div>
-            <div class="mockup-img">
-                <img src="images/team-mockup.png" alt="">
+            
+        </div>
+    </section>
+    <!--Projects-->
+    <section class="projects" data-aos="zoom-in">
+        <h1>Our Latest Projects</h1>
+        <div class="projects-images">
+            <div class="prj-img">
+                <img src="images/project-1.jpg" alt="">
+            </div>
+            <div class="prj-img">
+                <img src="images/project-2.jpg" alt="">
+            </div>
+            <div class="prj-img">
+                <img src="images/project-3.jpg" alt="">
+            </div>
+            <div class="prj-img">
+                <img src="images/project-4.jpg" alt="">
+            </div>
+            <div class="prj-img">
+                <img src="images/project-5.jpg" alt="">
+            </div>
+            <div class="prj-img">
+                <img src="images/project-6.jpg" alt="">
             </div>
         </div>
     </section>
+    <!--Call to action-->
+    <section class="getstarted">
+        <div class="ctn-container">
+            <div class="ctn-text">
+                <h1>Get Connected With ShawElevators</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt pariatur quibusdam, commodi, fugiat ullam unde aspernatur odit neque ut tempora accusantium quae eaque, molestiae deserunt ducimus harum aliquam officia autem?</p>
+                <button class="ctn-btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer" >
+        <div class="grid-wrapper">
+            <div class="col-4 footer1">
+                <h1>ShawElevators</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio totam, ipsam enim impedit eveniet itaque ea quo aperiam doloribus ad?</p>
+                <div class="social-profiles">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="col-4 footer2">
+                <h1>Contact info</h1>
+                <h4>ShawElevators, Kolkata</h4>
+                <h4>West Bengal, India</h4>
+                <h4>+91 7980811657</h4>
+                <h4>surajshaw1081@gmail.com</h4>
+                <h4>shawelevators.in</h4>
+            </div>
+            <div class="col-4 footer3">
+                <h1>About Us</h1>
+                <h4>Company</h4>
+                <h4>Projects</h4>
+                <h4>Events</h4>
+                <h4>Awards</h4>
+            </div>
+            <div class="col-4 footer4">
+                <h1>Services</h1>
+                <h4>New Installation</h4>
+                <h4>Modification</h4>
+                <h2>plans</h2>
+                <h4>Bronze</h4>
+                <h4>Silver</h4>
+                <h4>Gold</h4>
+            </div>
+           
+        </div>
+        <hr>
+        <div class="copyright">
+            <h4>Copyright @shawelevators. All rights reserved</h4>
+            <h4>Terms & Use</h4>
+            <h4>Privacy Policy</h4>
+        </div>
+        <!--Scroll to top-->
+        <i id="scrolltp" class="fa fa-arrow-up"></i>
+    </section>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+           offset: 200,
+           delay: 100,
+           duration: 1000,
+         });
+      </script>
+      <script src="app.js"></script>
 </body>
 </html>
